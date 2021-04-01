@@ -33,6 +33,7 @@ class QuizAdmin(nested_admin.NestedModelAdmin):
     inlines = [QuestionInline]
 ```
 Note that we have to overwrite the previous code because we added sth new to admin in QuizAdmin => `admin.site.register(Quiz, QuizAdmin)`
+
 15. Create urls in quiz and link to main urls
 16. Create serializers.py + import serializers from django_framework  + import all models from .models
 17. In views import generics from django_framework and Category, Quiz, Question from .models
